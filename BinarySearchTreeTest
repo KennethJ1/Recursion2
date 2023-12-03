@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+/**
+ *
+ * @author kmf.joseph
+ */
+public class BinarySearchTreeTest {
+
+    public static void main(String[] args) {
+        BsTree myEmployees = new BsTree();
+        myEmployees.insert(50, "Bugs Bunny");
+        myEmployees.insert(30, "Mickey Mouse");
+        myEmployees.insert(80, "Minnie Mouse");
+        myEmployees.insert(25, "Donald Duck");
+        myEmployees.insert(65, "Pluto");
+        myEmployees.insert(40, "Santa Claus");
+        myEmployees.insert(100, "Queen Elsa");
+        myEmployees.insert(70, "Anna");
+        myEmployees.insert(58, "Olaf");
+        System.out.println(myEmployees);
+        System.out.println("Find id greater than 100 " + myEmployees.numGreaterThan(100));
+        System.out.println("Find id for Donald Duck: " + myEmployees.findIdNumOf("Donald Duck"));
+        System.out.println("Find id for Queen Elsa: " + myEmployees.findIdNumOf("Queen Elsa"));
+        System.out.println("FIND id for NOT FOUND " + myEmployees.findIdNumOf("NOT FOUND"));
+
+    }
+}
