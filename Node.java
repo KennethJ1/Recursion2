@@ -23,9 +23,8 @@ public class Node {
         this.rightChild = rightChild;
     }
     
-    public Node(int idNUm, String name){ 
-        this.idNum = 0; 
-        this.name = null;
+    public Node(int idNum, String name){ 
+       this(idNum, name, null, null);
     } 
     
     public Node(){
@@ -46,9 +45,8 @@ public class Node {
         return rightChild;
     }
     //setters 
-    public void setIdNum(int idNum){
-        this.idNum = idNum; 
-    }
+    //took out setter for idNum so that no one can mess the order in our Bstree
+    //By simply just changing the idNum
     
     public void setName(String name){ 
         this.name = name;
@@ -60,6 +58,7 @@ public class Node {
         this.rightChild = rightChild;
     } 
     
+    @Override
     public String toString(){ 
         return "("  + idNum + " " + name + ")";
         
